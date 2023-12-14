@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 아래문은 구글에서 mapper 독타입 해서 복붙 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 패키지 6에서 mycarMapper 복붙 후 전체 삭제 -->
+  
+ <mapper namespace="answer">
+ 	<insert id="InsertOfReanswer" parameterType="adto">
+ 	
+ 	</insert>
+ 	
+ 	<select id="SelectNumOfReanswer" parameterType="int" resultType="adto">
+ 	
+ 	</select>
+ </mapper>

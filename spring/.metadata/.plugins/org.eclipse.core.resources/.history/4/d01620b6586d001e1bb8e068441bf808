@@ -1,0 +1,70 @@
+package answer.data;
+
+import java.util.List;
+
+import spring.mvc.reboard.BoardDaoInter;
+import spring.mvc.reboard.BoardDto;
+
+public class AnswerDao implements BoardDaoInter {
+
+	@Override
+	public int getTotalCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getMaxNum() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void updateRestep(int regroup, int restep) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void insertReboard(BoardDto dto) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<BoardDto> getPagingList(int start, int perpage) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BoardDto getDataReboard(int num) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateReadcount(int num) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int getCheckPass(int num, int pass) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void updateDetail(BoardDto dto) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteReboard(int num) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

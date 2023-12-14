@@ -1,0 +1,34 @@
+package board.data.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class BoardDeleteController {
+
+
+	//비밀번호 삭제
+	@GetMapping("/board/deletepassform")
+	public ModelAndView dpassform(
+			@RequestParam String num,
+			@RequestParam String currentPage)
+	{
+		ModelAndView model=new ModelAndView();
+		model.addObject("num", num);
+		model.addObject("currentPage", currentPage);
+		
+		model.setViewName("reboard/delpassform");
+		return model;
+	}
+	
+	//게시판 글 삭제
+	@PostMapping("/board/deletepass")
+	public String delteReboard(int num)
+	{
+		
+		return "redirect:list";
+	}
+}
